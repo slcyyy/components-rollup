@@ -1,0 +1,21 @@
+{
+  "name": "components-rollup",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:slcyyy/components-rollup.git",
+  "author": "luochun <luochun@idcos.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "rollup": "^3.28.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}
