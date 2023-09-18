@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+         /* Babel 会在 Rollup 有机会做处理之前，将我们的模块转成 CommonJS，导致 Rollup 的一些处理失败 */
+        "modules": false,
+        "useBuiltIns": "usage",
+        "corejs": "3", // 只需要关注主要版本号，而不是具体的版本补丁号
+        "targets": {
+          "browsers": ["last 2 versions", "not dead"]
+        }
+      }
+    ]
+  ]
+}

@@ -1,21 +1,28 @@
 {
-  "name": "components-rollup",
-  "type": "module",
+  "name": "components",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "repository": "git@github.com:slcyyy/components-rollup.git",
-  "author": "luochun <luochun@idcos.com>",
-  "license": "MIT",
   "scripts": {
-    "build": "rollup --config"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.4",
-    "@rollup/plugin-node-resolve": "^15.1.0",
-    "@rollup/plugin-typescript": "^11.1.2",
-    "rollup": "^3.28.0"
-  },
-  "dependencies": {
-    "lodash-es": "^4.17.21"
+    "@storybook/addon-essentials": "^7.4.2",
+    "@storybook/addon-interactions": "^7.4.2",
+    "@storybook/addon-links": "^7.4.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.2",
+    "@storybook/react": "^7.4.2",
+    "@storybook/react-vite": "^7.4.2",
+    "@storybook/testing-library": "^0.2.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.4.2"
   }
 }
